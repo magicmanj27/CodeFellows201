@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Lili Demo</title>
+
+    <style>
+        .Lili {
+            position: absolute;
+            top: 5px;
+            left: 150px;
+        }
+    </style>
+    </head>
+
+    <body>
+        <h1>Lili Demo</h1>
+
+        <img class="Lili" src="https://file.toyhou.se/thumbnails/11801458_xYO.png">
+
+        <br>
+
+        <script>
+            'use strict';
+
+            var answers = [];
+
+            answers.name = prompt("Hi! Please provide your name or a nickname so we can start!");
+            answers.pet = prompt("Thank you, " + answers.name + ". What kind of pet do you have?");
+            answers.pet = answers.pet.toLowerCase();
+            answers.gender = prompt("Cool! I like " + answers.pet + "s. Is your " + answers.pet + " a boy or a girl?");
+            answers.gender = answers.gender.toLowerCase();
+            if(answers.gender === "boy"){
+                answers.petName = prompt("A " + answers.gender + ", huh? What's his name?");
+                answers.gender = "him";
+            } else{
+                answers.petName = prompt("A " + answers.gender + ", huh? What's her name?")
+                answers.gender = "her";
+            }
+
+            document.write('<p>',"Thank you for your answers, " + answers.name + "!",'<br>',
+                "Please also tell your " + answers.pet + ", " + answers.petName + ", that I love " + answers.gender + " : )",'</p>');
+        
+            answers.push;
+            console.log(answers);
+
+        </script>
+    </body>
+</html>
